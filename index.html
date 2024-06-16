@@ -15,13 +15,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-stone-200">
-    <main class="flex justify-center ">
-      <form class="bg-white mt-20 rounded-br-[150px] p-14">
-        <div class="flex m-10 ml-1 mt-1 space-x-5 justify-center">
+    <main class="flex">
+      <form class="bg-white mt-20 w-screen md:w-fit rounded-t-[20px] rounded-bl-[20px] rounded-br-[150px] p-24 pl-10 py-16">
+        <div class="flex m-10 md:*:ml-1 -mt-6 space-x-5 *:items-center md:justify-center">
           <div>
             <p class="font-bold text-xs">DAY</p>
             <input
-              class="mt-1 block w-24 p-2 text-2xl border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-300"
+              class="mt-1 block w-24 p-2 text-2xl border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:border-purple-300"
               type="text"
               placeholder="DD"
             />
@@ -29,7 +29,7 @@
           <div>
             <p class="font-bold text-xs">MONTH</p>
             <input
-              class="mt-1 block w-24 p-2 text-2xl border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-300"
+              class="mt-1 block w-24 p-2 text-2xl border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:border-purple-300"
               type="text"
               placeholder="MM"
             />
@@ -37,18 +37,33 @@
           <div>
             <p class="font-bold text-xs">YEAR</p>
             <input
-              class="mt-1 block w-24 p-2 text-2xl border border-gray-300 rounded-md shadow-md focus:outline-none focus:ring focus:border-blue-300"
+              class="mt-1 block w-24 p-2 text-2xl border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:border-purple-300"
               type="text"
               placeholder="YYYY"
             />
           </div>
         </div>
-        <svg class="flex rounded-full bg-purple-700 ml-[400px]" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
-          <div class="border-t-2"></div>
-          <div class="flex-row mt-10">
-          <p class="text-6xl"><span>38</span> years</p>
-          <p class="text-6xl"><span>3</span> months</p>
-          <p class="text-6xl"><span>26</span> days</p>
+        <br>
+        <div class="border-t-2 mt-3"></div>
+        <button class="rounded-full flex md:ml-[23.5rem] ml-[11rem] -mt-10" type="submit">
+          <svg
+          class="flex bg-purple-700 rounded-full p-5 hover:bg-black "
+          xmlns="http://www.w3.org/2000/svg"
+          width="70px"
+          height="70px"
+          viewBox="0 0 46 44"
+        >
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path
+              d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+            />
+          </g>
+        </svg>
+        </button>
+        <div class="flex-row">
+          <p class="text-6xl"><span class="text-purple-600">38</span> years</p>
+          <p class="text-6xl"><span class="text-purple-600">3</span> months</p>
+          <p class="text-6xl"><span class="text-purple-600">26</span> days</p>
         </div>
       </form>
     </main>
