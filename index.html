@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
+    <title>Frontend Mentor | Age calculator app</title>
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="index.css">
-    <title>Frontend Mentor | Age calculator app</title>
+      href="./assets/images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./index.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,12 +25,18 @@
     />
   </head>
   <body class="bg-stone-200 font-[32px]">
-    <main class="flex justify-center md:justify-end">
+    <main class="flex justify-center md:justify-center">
       <form class="">
-        <div class="bg-white flex flex-col mt-20 p-[5px] md:p-[40px] w-fit md:w-auto rounded-t-[25px] rounded-bl-[25px] md:rounded-t-[20px] md:rounded-bl-[20px] rounded-br-[150px]">
+        <div
+          class="bg-white flex flex-col mt-20 p-[2px] md:p-[40px] w-fit md:w-auto rounded-t-[25px] rounded-bl-[25px] md:rounded-t-[20px] md:rounded-bl-[20px] rounded-br-[150px]"
+        >
           <div class="flex m-8 md:m-0 space-x-5">
             <div>
-              <p class="poppins-light text-xs ">DAY</p>
+              <p
+                class="poppins-regular font-bold text-[10px] text-justify text-gray-500"
+              >
+                DAY
+              </p>
               <input
                 class="mt-1 block w-24 p-2 text-2xl poppins-extrabold border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:border-purple-300"
                 type="text"
@@ -37,7 +44,9 @@
               />
             </div>
             <div>
-              <p class="font-bold text-xs text-outline text-gray-400">MONTH</p>
+              <p class="poppins-regular font-bold text-[10px] text-gray-500">
+                MONTH
+              </p>
               <input
                 class="mt-1 block w-24 p-2 text-2xl poppins-extrabold border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:border-purple-300"
                 type="text"
@@ -45,7 +54,9 @@
               />
             </div>
             <div>
-              <p class="font-bold text-xs">YEAR</p>
+              <p class="poppins-regular font-bold text-[10px] text-gray-500">
+                YEAR
+              </p>
               <input
                 class="mt-1 block w-24 p-2 text-2xl poppins-extrabold border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-1 focus:border-purple-300"
                 type="text"
@@ -73,14 +84,16 @@
               </g>
             </svg>
           </button>
-          <div class="flex-row m-8 md:m-0">
+          <div class="flex-row bg- m-8 md:m-0">
             <p class="text-6xl poppins-extrabold-italic">
               <span class="text-purple-600">38</span> years
             </p>
             <p class="text-6xl poppins-extrabold-italic">
               <span class="text-purple-600">3</span> months
             </p>
-            <p class="text-6xl poppins-extrabold-italic"><span class="text-purple-600">26</span> days</p>
+            <p class="text-6xl poppins-extrabold-italic">
+              <span class="text-purple-600">26</span> days
+            </p>
           </div>
         </div>
       </form>
